@@ -45,11 +45,11 @@
             </objects>
             <point key="canvasLocation" x="1536.8" y="78.710644677661179"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Описание-->
         <scene sceneID="AWy-Ww-s46">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4Yd-hz-bz4" customClass="PageViewController" customModule="Bukvitsa" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Ybc-rX-Pay"/>
+                    <navigationItem key="navigationItem" title="Описание" id="Ybc-rX-Pay"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfE-QF-jRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,6 +279,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SRM-Z4-yeV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="-Normal" family="Родникъ" pointSize="20"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
