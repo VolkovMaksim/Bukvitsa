@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		3713EB57241816EA00348CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB56241816EA00348CC9 /* AppDelegate.swift */; };
 		3713EB59241816EA00348CC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB58241816EA00348CC9 /* SceneDelegate.swift */; };
-		3713EB5B241816EA00348CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB5A241816EA00348CC9 /* ViewController.swift */; };
 		3713EB5E241816EA00348CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3713EB5C241816EA00348CC9 /* Main.storyboard */; };
 		3713EB60241816EB00348CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3713EB5F241816EB00348CC9 /* Assets.xcassets */; };
 		3713EB63241816EB00348CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3713EB61241816EB00348CC9 /* LaunchScreen.storyboard */; };
+		3713EB6B24181CC300348CC9 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6A24181CC300348CC9 /* MainTableViewController.swift */; };
+		3713EB6D24191B2C00348CC9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6C24191B2C00348CC9 /* DetailVC.swift */; };
+		3713EB6F24191D9400348CC9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6E24191D9400348CC9 /* PageViewController.swift */; };
+		3754A1832420EEBF00888A20 /* rodnik.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3754A1822420EEBE00888A20 /* rodnik.otf */; };
+		37CE20582424EAC00018E84A /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE20572424EAC00018E84A /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3713EB53241816EA00348CC9 /* Bukvitsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bukvitsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3713EB56241816EA00348CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3713EB58241816EA00348CC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3713EB5A241816EA00348CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3713EB5D241816EA00348CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3713EB5F241816EB00348CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3713EB62241816EB00348CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3713EB64241816EB00348CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3713EB6A24181CC300348CC9 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		3713EB6C24191B2C00348CC9 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		3713EB6E24191D9400348CC9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		3754A1822420EEBE00888A20 /* rodnik.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = rodnik.otf; path = "../../../../Шрифты/rodnik.otf"; sourceTree = "<group>"; };
+		37CE20572424EAC00018E84A /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				3713EB56241816EA00348CC9 /* AppDelegate.swift */,
 				3713EB58241816EA00348CC9 /* SceneDelegate.swift */,
-				3713EB5A241816EA00348CC9 /* ViewController.swift */,
+				3713EB6A24181CC300348CC9 /* MainTableViewController.swift */,
+				3713EB6E24191D9400348CC9 /* PageViewController.swift */,
+				3713EB6C24191B2C00348CC9 /* DetailVC.swift */,
+				37CE20572424EAC00018E84A /* MoreViewController.swift */,
 				3713EB5C241816EA00348CC9 /* Main.storyboard */,
 				3713EB5F241816EB00348CC9 /* Assets.xcassets */,
 				3713EB61241816EB00348CC9 /* LaunchScreen.storyboard */,
 				3713EB64241816EB00348CC9 /* Info.plist */,
+				3754A1822420EEBE00888A20 /* rodnik.otf */,
 			);
 			path = Bukvitsa;
 			sourceTree = "<group>";
@@ -125,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3754A1832420EEBF00888A20 /* rodnik.otf in Resources */,
 				3713EB63241816EB00348CC9 /* LaunchScreen.storyboard in Resources */,
 				3713EB60241816EB00348CC9 /* Assets.xcassets in Resources */,
 				3713EB5E241816EA00348CC9 /* Main.storyboard in Resources */,
@@ -138,7 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3713EB5B241816EA00348CC9 /* ViewController.swift in Sources */,
+				3713EB6B24181CC300348CC9 /* MainTableViewController.swift in Sources */,
+				3713EB6F24191D9400348CC9 /* PageViewController.swift in Sources */,
+				3713EB6D24191B2C00348CC9 /* DetailVC.swift in Sources */,
+				37CE20582424EAC00018E84A /* MoreViewController.swift in Sources */,
 				3713EB57241816EA00348CC9 /* AppDelegate.swift in Sources */,
 				3713EB59241816EA00348CC9 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.superstarper.dev.Bukvitsa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.superstarper.dev.Bukvitsa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
