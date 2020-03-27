@@ -49,17 +49,17 @@ class MainTableViewController: UITableViewController {
 
     // настройка отображения ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_Bukv", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_Bukv", for: indexPath) as! CustomTableViewCell
         // настройка изображения в ячейке
         cell.imageView?.image = UIImage(named: arrayOfSymbols[indexPath.row])
         // настройка подписи в ячейке
         cell.textLabel?.text = arrayOfSymbols[indexPath.row]
         // изменение шрифта на РОДНИКЪ и его размера
-        cell.textLabel?.font = UIFont(name: "-Normal", size: 20)
+        cell.textLabel?.font = UIFont(name: "-Normal", size: 22)
         // изменение размера шрифта
         //cell.textLabel?.font = cell.textLabel?.font.withSize(25)
-        cell.detailTextLabel?.text = arrayOfSounds[indexPath.row]
-        cell.detailTextLabel?.font = UIFont(name: "", size: 20)
+        cell.soundLabel?.text = arrayOfSounds[indexPath.row]
+//        cell.soundLabel?.font = UIFont(name: "", size: 40)
 //        soundLabel.text = arrayOfSounds[indexPath.row]
 //        soundLabel.font = UIFont(name: "-Normal", size: 20)
         return cell

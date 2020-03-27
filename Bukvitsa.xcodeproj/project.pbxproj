@@ -16,6 +16,7 @@
 		3713EB6D24191B2C00348CC9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6C24191B2C00348CC9 /* DetailVC.swift */; };
 		3713EB6F24191D9400348CC9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6E24191D9400348CC9 /* PageViewController.swift */; };
 		3754A1832420EEBF00888A20 /* rodnik.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3754A1822420EEBE00888A20 /* rodnik.otf */; };
+		37BE5464242E2B25009DA6FC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BE5463242E2B25009DA6FC /* CustomTableViewCell.swift */; };
 		37CE20582424EAC00018E84A /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CE20572424EAC00018E84A /* MoreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		3713EB6C24191B2C00348CC9 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		3713EB6E24191D9400348CC9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		3754A1822420EEBE00888A20 /* rodnik.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = rodnik.otf; path = "../../../../Шрифты/rodnik.otf"; sourceTree = "<group>"; };
+		37BE5463242E2B25009DA6FC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		37CE20572424EAC00018E84A /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				3713EB56241816EA00348CC9 /* AppDelegate.swift */,
 				3713EB58241816EA00348CC9 /* SceneDelegate.swift */,
 				3713EB6A24181CC300348CC9 /* MainTableViewController.swift */,
+				37BE5463242E2B25009DA6FC /* CustomTableViewCell.swift */,
 				3713EB6E24191D9400348CC9 /* PageViewController.swift */,
 				3713EB6C24191B2C00348CC9 /* DetailVC.swift */,
 				37CE20572424EAC00018E84A /* MoreViewController.swift */,
@@ -154,6 +157,7 @@
 				3713EB6B24181CC300348CC9 /* MainTableViewController.swift in Sources */,
 				3713EB6F24191D9400348CC9 /* PageViewController.swift in Sources */,
 				3713EB6D24191B2C00348CC9 /* DetailVC.swift in Sources */,
+				37BE5464242E2B25009DA6FC /* CustomTableViewCell.swift in Sources */,
 				37CE20582424EAC00018E84A /* MoreViewController.swift in Sources */,
 				3713EB57241816EA00348CC9 /* AppDelegate.swift in Sources */,
 				3713EB59241816EA00348CC9 /* SceneDelegate.swift in Sources */,
