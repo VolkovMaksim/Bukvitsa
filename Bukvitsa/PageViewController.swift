@@ -14,6 +14,7 @@ class PageViewController: UIPageViewController {
     var bukvTitle = ""
     var value = 0
     var mainArrayOfSymbol: [String] = []
+    var mainArrayOfSound: [String] = []
     
     let arrayOfUnicodeP = [
         "U+0410", "U+0411", "U+0412", "U+0413", "U+0414", "U+0415", "U+0404",
@@ -93,6 +94,7 @@ class PageViewController: UIPageViewController {
         contentVC.bukvTitleVC = mainArrayOfSymbol[index]
         contentVC.currentPageVC = index
         contentVC.numberOfPagesVC = mainArrayOfSymbol.count
+        contentVC.soundBukvVC = mainArrayOfSound[index]
         
         contentVC.unicodeBukvVCP = arrayOfUnicodeP[index]
         contentVC.htmlBukvVCP = arrayOfHTMLP[index]

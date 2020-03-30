@@ -88,6 +88,7 @@ class MainTableViewController: UITableViewController {
                 pageVC.value = arrayOfSymbols.firstIndex(of: arrayOfSymbols[indexPath.row])!
                 // передача массива в класс PageViewController.swift
                 pageVC.mainArrayOfSymbol = arrayOfSymbols
+                pageVC.mainArrayOfSound = arrayOfSounds
             }
         }
     }

@@ -63,11 +63,11 @@
             </objects>
             <point key="canvasLocation" x="1535.625" y="78.16901408450704"/>
         </scene>
-        <!--Описание-->
+        <!--Образ буквицы-->
         <scene sceneID="AWy-Ww-s46">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="flipHorizontal" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4Yd-hz-bz4" customClass="PageViewController" customModule="Bukvitsa" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Описание" id="Ybc-rX-Pay"/>
+                    <navigationItem key="navigationItem" title="Образ буквицы" id="Ybc-rX-Pay"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfE-QF-jRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,7 +96,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cGy-vV-wvw">
-                                <rect key="frame" x="0.0" y="239.5" width="320" height="328.5"/>
+                                <rect key="frame" x="0.0" y="273.5" width="320" height="294.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83e-k8-wRV">
                                         <rect key="frame" x="8" y="8" width="304" height="20.5"/>
@@ -257,15 +257,23 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="hKe-20-lNc"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="gTo-Oi-qlY"/>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCN-QQ-CQb">
+                                <rect key="frame" x="136" y="239.5" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="cGy-vV-wvw" firstAttribute="top" secondItem="xCN-QQ-CQb" secondAttribute="bottom" constant="10" id="D8R-Jh-EPC"/>
+                            <constraint firstItem="xCN-QQ-CQb" firstAttribute="centerX" secondItem="VJX-Sg-Da9" secondAttribute="centerX" id="PSE-9P-O5g"/>
                             <constraint firstItem="cGy-vV-wvw" firstAttribute="trailing" secondItem="VJX-Sg-Da9" secondAttribute="trailing" id="Q1u-Sb-D2R"/>
                             <constraint firstItem="Rhi-wI-atA" firstAttribute="centerX" secondItem="VJX-Sg-Da9" secondAttribute="centerX" id="U0m-X7-b1X"/>
                             <constraint firstItem="bHH-tx-9Zd" firstAttribute="leading" secondItem="VJX-Sg-Da9" secondAttribute="leading" constant="79.666666666666686" id="Zck-od-93J"/>
                             <constraint firstItem="VJX-Sg-Da9" firstAttribute="trailing" secondItem="bHH-tx-9Zd" secondAttribute="trailing" constant="79.333333333333314" id="abj-5I-LoD"/>
+                            <constraint firstItem="xCN-QQ-CQb" firstAttribute="top" secondItem="Rhi-wI-atA" secondAttribute="bottom" constant="8" id="cCo-bL-wHE"/>
                             <constraint firstItem="cGy-vV-wvw" firstAttribute="leading" secondItem="VJX-Sg-Da9" secondAttribute="leading" id="e2g-gE-bMA"/>
-                            <constraint firstItem="cGy-vV-wvw" firstAttribute="top" secondItem="Rhi-wI-atA" secondAttribute="bottom" constant="8" id="fkY-Aa-nQ4"/>
                             <constraint firstItem="cGy-vV-wvw" firstAttribute="bottom" secondItem="VJX-Sg-Da9" secondAttribute="bottom" id="hZ1-4I-cID"/>
                             <constraint firstItem="bHH-tx-9Zd" firstAttribute="top" secondItem="VJX-Sg-Da9" secondAttribute="top" constant="20" id="hlq-ob-j6E"/>
                             <constraint firstItem="Rhi-wI-atA" firstAttribute="top" secondItem="bHH-tx-9Zd" secondAttribute="bottom" constant="8" id="qND-Ka-qm5"/>
@@ -280,6 +288,7 @@
                         <outlet property="htmlBukvP" destination="VvR-2S-1Uc" id="mSl-3W-XBG"/>
                         <outlet property="htmlBukvS" destination="iII-Zr-woh" id="dkN-tE-4IG"/>
                         <outlet property="imageBukv" destination="bHH-tx-9Zd" id="JUa-UP-X5k"/>
+                        <outlet property="soundBukv" destination="xCN-QQ-CQb" id="Ism-Ly-7BI"/>
                         <outlet property="titleBukv" destination="Rhi-wI-atA" id="A3d-Xb-T1x"/>
                         <outlet property="unicodeBukvP" destination="Upg-2e-xET" id="rsn-0e-red"/>
                         <outlet property="unicodeBukvS" destination="UYA-iq-0Rc" id="1p0-eI-BYl"/>
