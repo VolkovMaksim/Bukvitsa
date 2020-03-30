@@ -505,7 +505,7 @@ class DetailVC: UIViewController {
         soundBukv.text = soundBukvVC
         
         definitionBukv.text = definitionBukvVC[currentPageVC]
-        definitionBukv.font = UIFont(name: "-Normal", size: 17)
+        definitionBukv.font = UIFont(name: "-Normal", size: 20)
         
         unicodeBukvP.text = unicodeBukvVCP
         htmlBukvP.text = htmlBukvVCP
