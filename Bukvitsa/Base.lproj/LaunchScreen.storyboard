@@ -16,15 +16,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="aN9-ya-DVg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="10" y="0.0" width="355" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="aN9-ya-DVg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="AyP-t9-BNC"/>
-                            <constraint firstItem="aN9-ya-DVg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H0h-qp-zoF"/>
+                            <constraint firstItem="aN9-ya-DVg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="H0h-qp-zoF"/>
                             <constraint firstItem="aN9-ya-DVg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nvf-pG-rCN"/>
-                            <constraint firstItem="aN9-ya-DVg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zjh-Hr-cs1"/>
+                            <constraint firstItem="aN9-ya-DVg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-10" id="Zjh-Hr-cs1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -35,6 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="351.5" height="351.5"/>
+        <image name="LaunchScreen" width="1404" height="1404"/>
     </resources>
 </document>

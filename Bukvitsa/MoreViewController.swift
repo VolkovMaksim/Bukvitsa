@@ -14,7 +14,7 @@ class MoreViewController: UIViewController {
     @IBOutlet weak var aboutLabel: UILabel!
     @IBOutlet weak var byeLabel: UILabel!
     let moreInfo = "Здравствуй!"
-    let aboutInfo =
+    var aboutInfo =
 """
  Благодарю за установку моего приложения!
 
@@ -23,9 +23,11 @@ class MoreViewController: UIViewController {
  В этом приложении используется шрифт РОДНИКЪ с отличного сайта родникъ.рус.
 """
     let byeInfo = "ДОБРА!"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         moreLabel.text = moreInfo
         moreLabel.font = UIFont(name: "-Normal", size: 25)
         aboutLabel.text = aboutInfo
