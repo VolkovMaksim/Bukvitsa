@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="1535.625" y="78.16901408450704"/>
         </scene>
-        <!--Item-->
+        <!--Толкование-->
         <scene sceneID="o6F-If-ovH">
             <objects>
                 <collectionViewController id="fTq-9U-oF6" customClass="TolkCollectionVC" customModule="Буквица" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="134.99999999999997" height="135"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="If1-Ib-Byc">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="If1-Ib-Byc">
                                             <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                         </imageView>
                                     </subviews>
@@ -97,6 +97,9 @@
                                         <constraint firstItem="If1-Ib-Byc" firstAttribute="leading" secondItem="JJg-WY-CWA" secondAttribute="leading" id="u7W-px-2os"/>
                                     </constraints>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="lineImage" destination="If1-Ib-Byc" id="Jsj-sX-hRA"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -104,7 +107,7 @@
                             <outlet property="delegate" destination="fTq-9U-oF6" id="cdG-xa-fgS"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="0TZ-29-Sm2"/>
+                    <tabBarItem key="tabBarItem" title="Толкование" image="emptyTable" id="0TZ-29-Sm2"/>
                     <connections>
                         <segue destination="86i-Jx-NBr" kind="show" identifier="TolkSegue" id="vKD-Qs-5vK"/>
                     </connections>
@@ -176,6 +179,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ilA-oe-xxD"/>
                     </view>
+                    <connections>
+                        <outlet property="tolkImage" destination="a42-3g-rJ2" id="mlh-LV-N9i"/>
+                        <outlet property="tolkLabel" destination="h4v-Jj-Wgo" id="cbQ-if-xUE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQH-eZ-9V0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,7 +465,7 @@
             </objects>
             <point key="canvasLocation" x="597.60000000000002" y="78.710644677661179"/>
         </scene>
-        <!--Инфо-->
+        <!--Сюда-->
         <scene sceneID="JEu-gk-zG4">
             <objects>
                 <viewController id="TBb-fB-ljM" customClass="MoreViewController" customModule="Буквица" customModuleProvider="target" sceneMemberID="viewController">
@@ -514,7 +521,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="akZ-RX-dF2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Инфо" image="emptyTable" id="jrx-NU-fOZ"/>
+                    <tabBarItem key="tabBarItem" title="Сюда" image="arrowTB" id="jrx-NU-fOZ"/>
                     <connections>
                         <outlet property="aboutLabel" destination="sx6-Rd-y5J" id="rhw-5L-AXU"/>
                         <outlet property="byeLabel" destination="nVq-NF-C0R" id="Yyf-9z-zbI"/>
@@ -527,6 +534,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowTB" width="25" height="9.3333330154418945"/>
         <image name="emptyTable" width="26.333333969116211" height="26.666666030883789"/>
         <image name="spisok" width="25" height="25"/>
     </resources>

@@ -10,4 +10,5 @@ import UIKit
 
 class TolkCollectionVCell: UICollectionViewCell {
     
+    @IBOutlet weak var lineImage: UIImageView!
 }

@@ -58,7 +58,6 @@
 		3713EB4A241816EA00348CC9 = {
 			isa = PBXGroup;
 			children = (
-				37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */,
 				3713EB55241816EA00348CC9 /* Bukvitsa */,
 				3713EB54241816EA00348CC9 /* Products */,
 			);
@@ -75,6 +74,7 @@
 		3713EB55241816EA00348CC9 /* Bukvitsa */ = {
 			isa = PBXGroup;
 			children = (
+				37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */,
 				3713EB56241816EA00348CC9 /* AppDelegate.swift */,
 				3713EB58241816EA00348CC9 /* SceneDelegate.swift */,
 				3713EB6A24181CC300348CC9 /* MainTableViewController.swift */,

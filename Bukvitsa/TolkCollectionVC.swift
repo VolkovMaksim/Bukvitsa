@@ -8,20 +8,21 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "TolkCell"
 
 class TolkCollectionVC: UICollectionViewController {
+    
+    let arrayOfLines = [
+        "А Б В Г Д Е Є", "Ж Ѕ З И І Ї Ћ", "К Л М Н О П Р", "С Т У Ѹ Ф Х Ѿ",
+        "Ц Ч Ш Щ Ъ Ы Ь", "Ѣ Ю Ꙗ Ѥ Ѡ Ѧ Ѫ", "Ѩ Ѭ Ѯ Ѱ Ѳ Ѵ Ӕ", "А Ѕ М Ѹ Ъ Ѧ Ӕ",
+        "Є Ї О Ѹ Ш Ю Ѩ", "А Ж К С Ц Ѣ Ѩ", "Б Ѕ Л Т Ч Ю Ѭ", "В З М У Ш Ꙗ Ѯ",
+        "Г И Н Ѹ Щ Ѥ Ѱ", "Д І О Ф Ъ Ѡ Ѳ", "Е Ї П Х Ы Ѧ Ѵ", "Є Ћ Р Ѿ Ь Ѫ Ӕ"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        
     }
 
     /*
@@ -36,21 +37,15 @@ class TolkCollectionVC: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return arrayOfLines.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TolkCollectionVCell
     
-        // Configure the cell
+        cell.lineImage.image = UIImage(named: arrayOfLines[indexPath.row])
     
         return cell
     }

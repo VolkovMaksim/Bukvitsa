@@ -10,6 +10,8 @@ import UIKit
 
 class TolkVC: UIViewController {
 
+    @IBOutlet weak var tolkImage: UIImageView!
+    @IBOutlet weak var tolkLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
