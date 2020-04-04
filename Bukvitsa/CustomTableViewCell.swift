@@ -9,9 +9,6 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-    
-    
-    
 
     @IBOutlet weak var soundLabel: UILabel!
     

@@ -74,7 +74,6 @@
 		3713EB55241816EA00348CC9 /* Bukvitsa */ = {
 			isa = PBXGroup;
 			children = (
-				37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */,
 				3713EB56241816EA00348CC9 /* AppDelegate.swift */,
 				3713EB58241816EA00348CC9 /* SceneDelegate.swift */,
 				3713EB6A24181CC300348CC9 /* MainTableViewController.swift */,
@@ -82,9 +81,10 @@
 				3713EB6E24191D9400348CC9 /* PageViewController.swift */,
 				3713EB6C24191B2C00348CC9 /* DetailVC.swift */,
 				37CE20572424EAC00018E84A /* MoreViewController.swift */,
-				37459B4F2435AD3300FCB3EA /* TolkVC.swift */,
-				37459B4D2435AD0A00FCB3EA /* TolkPageVC.swift */,
+				37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */,
 				37459B4B2435ACE600FCB3EA /* TolkCollectionVCell.swift */,
+				37459B4D2435AD0A00FCB3EA /* TolkPageVC.swift */,
+				37459B4F2435AD3300FCB3EA /* TolkVC.swift */,
 				3713EB5C241816EA00348CC9 /* Main.storyboard */,
 				3713EB5F241816EB00348CC9 /* Assets.xcassets */,
 				3713EB61241816EB00348CC9 /* LaunchScreen.storyboard */,

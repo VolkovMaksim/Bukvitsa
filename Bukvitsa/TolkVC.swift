@@ -12,6 +12,9 @@ class TolkVC: UIViewController {
 
     @IBOutlet weak var tolkImage: UIImageView!
     @IBOutlet weak var tolkLabel: UILabel!
+    
+    var currentLine = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

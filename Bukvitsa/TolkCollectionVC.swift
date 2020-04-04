@@ -25,16 +25,6 @@ class TolkCollectionVC: UICollectionViewController {
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     // MARK: UICollectionViewDataSource
 
 
@@ -50,10 +40,33 @@ class TolkCollectionVC: UICollectionViewController {
         return cell
     }
 
+    
+    // MARK: - Navigation
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // если идентификатор сигвея соответствует "DetailPage"
+        if segue.identifier == "TolkPage" {
+            // если новая константа принимает значение выбранной ячейки
+            if let indexPath = self.collectionView.indexPathsForSelectedItems {
+                // новая константа VC, класса PageViewController, которая будет в конце перехода по сегвею
+                let pageVC = segue.destination as! TolkPageVC
+                // установка значения выбранной ячейки для свойства bukvTitle
+                pageVC.tolkLine = arrayOfLines[indexPath.count]
+                // установка числового значения выбранной ячейки для свойства value
+                // передача массива в класс PageViewController.swift
+                pageVC.mainArrayOfLines = arrayOfLines
+            }
+        }
+    }
+    
+
+
     // MARK: UICollectionViewDelegate
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
+     
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -61,6 +74,7 @@ class TolkCollectionVC: UICollectionViewController {
 
     /*
     // Uncomment this method to specify if the specified item should be selected
+     
     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -68,6 +82,7 @@ class TolkCollectionVC: UICollectionViewController {
 
     /*
     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+     
     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
         return false
     }
