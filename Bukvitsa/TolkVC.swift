@@ -13,12 +13,13 @@ class TolkVC: UIViewController {
     @IBOutlet weak var tolkImage: UIImageView!
     @IBOutlet weak var tolkLabel: UILabel!
     
+    var tolkImageVC: UIImage?
     var currentLine = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tolkImage.image = tolkImageVC
     }
     
 

@@ -37,13 +37,11 @@ class MainTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //labelOfSound.text = arrayOfSounds[arrayOfSymbols.firstIndex()]
     }
 
     // MARK: - Table view data source
     // установка количества ячеек, равного кол-ву эл-тов массива - 49
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return arrayOfSymbols.count
     }
 
@@ -57,11 +55,7 @@ class MainTableViewController: UITableViewController {
         // изменение шрифта на РОДНИКЪ и его размера
         cell.textLabel?.font = UIFont(name: "-Normal", size: 22)
         // изменение размера шрифта
-        //cell.textLabel?.font = cell.textLabel?.font.withSize(25)
         cell.soundLabel?.text = arrayOfSounds[indexPath.row]
-//        cell.soundLabel?.font = UIFont(name: "", size: 40)
-//        soundLabel.text = arrayOfSounds[indexPath.row]
-//        soundLabel.font = UIFont(name: "-Normal", size: 20)
         return cell
     }
     

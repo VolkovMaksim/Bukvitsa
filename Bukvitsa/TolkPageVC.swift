@@ -12,6 +12,7 @@ class TolkPageVC: UIPageViewController {
     
     var mainArrayOfLines: [String] = []
     var tolkLine = ""
+    var imageLine: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,10 @@ class TolkPageVC: UIPageViewController {
     }
     
     func showViewControllerAtIndex (_ index: Int) -> TolkVC? {
-        guard index >= 0 else { return nil }
-        guard index < mainArrayOfLines.count else { return nil }
+        //guard index >= 0 else { return nil }
+        //guard index < mainArrayOfLines.count else { return nil }
         guard let contentVC = storyboard?.instantiateViewController(withIdentifier: "TolkVCID") as? TolkVC else { return nil }
-//        contentVC.bukvTitleVC = mainArrayOfSymbol[index]
+        contentVC.tolkImageVC = imageLine
 //        contentVC.currentPageVC = index
 //        contentVC.numberOfPagesVC = mainArrayOfSymbol.count
 //        contentVC.soundBukvVC = mainArrayOfSound[index]

@@ -47,10 +47,14 @@ class TolkCollectionVC: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // если идентификатор сигвея соответствует "DetailPage"
         if segue.identifier == "TolkPage" {
+            // новая константа VC, класса PageViewController, которая будет в конце перехода по сегвею
+            let pageVC = segue.destination as! TolkPageVC
+            let cell = sender as! TolkCollectionVCell
+            pageVC.imageLine = cell.lineImage.image
             // если новая константа принимает значение выбранной ячейки
             if let indexPath = self.collectionView.indexPathsForSelectedItems {
-                // новая константа VC, класса PageViewController, которая будет в конце перехода по сегвею
-                let pageVC = segue.destination as! TolkPageVC
+                
+                
                 // установка значения выбранной ячейки для свойства bukvTitle
                 pageVC.tolkLine = arrayOfLines[indexPath.count]
                 // установка числового значения выбранной ячейки для свойства value
