@@ -10,16 +10,6 @@ import UIKit
 
 class TolkCollectionVCell: UICollectionViewCell {
     
-    @IBOutlet weak var lineImage: UIImageView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var lineImageCell: UIImageView!
 
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
 }

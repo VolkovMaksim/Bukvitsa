@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "TolkCell"
-
 class TolkCollectionVC: UICollectionViewController {
     
     let arrayOfLines = [
@@ -19,85 +17,49 @@ class TolkCollectionVC: UICollectionViewController {
         "Г И Н Ѹ Щ Ѥ Ѱ", "Д І О Ф Ъ Ѡ Ѳ", "Е Ї П Х Ы Ѧ Ѵ", "Є Ћ Р Ѿ Ь Ѫ Ӕ"
     ]
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
 
     // MARK: UICollectionViewDataSource
-
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrayOfLines.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! TolkCollectionVCell
-    
-        cell.lineImage.image = UIImage(named: arrayOfLines[indexPath.row])
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TolkCell", for: indexPath) as! TolkCollectionVCell
+        cell.lineImageCell.image = UIImage(named: arrayOfLines[indexPath.row])
         return cell
     }
 
+//    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let item = arrayOfLines[indexPath.row]
+//    }
     
     // MARK: - Navigation
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // если идентификатор сигвея соответствует "DetailPage"
         if segue.identifier == "TolkPage" {
-            // новая константа VC, класса PageViewController, которая будет в конце перехода по сегвею
-            let pageVC = segue.destination as! TolkPageVC
-            let cell = sender as! TolkCollectionVCell
-            pageVC.imageLine = cell.lineImage.image
             // если новая константа принимает значение выбранной ячейки
-            if let indexPath = self.collectionView.indexPathsForSelectedItems {
-                
-                
-                // установка значения выбранной ячейки для свойства bukvTitle
-                pageVC.tolkLine = arrayOfLines[indexPath.count]
+            if let indexPath = self.collectionView.indexPath(for: sender as! TolkCollectionVCell) {
+                // фиксируем переход по сегвею до заданного контроллера
+                let pageVC = segue.destination as! TolkPageVC
+                // переходим с выбранной ячейки
+                    //let cell = sender as! TolkCollectionVCell
+                    //pageVC.imageLinePage = cell.lineImageCell.image
+                // установка значения выбранной ячейки для свойства tolkLinePage
+                pageVC.tolkLinePage = arrayOfLines[indexPath.row]
                 // установка числового значения выбранной ячейки для свойства value
-                // передача массива в класс PageViewController.swift
-                pageVC.mainArrayOfLines = arrayOfLines
+                // передача массива в класс TolkCollectionVC.swift
+                pageVC.arrayOfLinesPage = arrayOfLines
             }
         }
     }
+}
+
+extension TolkCollectionVC: UICollectionViewDelegateFlowLayout {
     
-
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-     
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-     
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-     
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
-
 }

@@ -79,7 +79,7 @@ class MainTableViewController: UITableViewController {
                 // установка значения выбранной ячейки для свойства bukvTitle
                 pageVC.bukvTitle = arrayOfSymbols[indexPath.row]
                 // установка числового значения выбранной ячейки для свойства value
-                pageVC.value = arrayOfSymbols.firstIndex(of: arrayOfSymbols[indexPath.row])!
+                //pageVC.value = arrayOfSymbols.firstIndex(of: arrayOfSymbols[indexPath.row])!
                 // передача массива в класс PageViewController.swift
                 pageVC.mainArrayOfSymbol = arrayOfSymbols
                 pageVC.mainArrayOfSound = arrayOfSounds

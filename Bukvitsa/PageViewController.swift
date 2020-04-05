@@ -10,9 +10,8 @@ import UIKit
 
 class PageViewController: UIPageViewController {
 
-    
     var bukvTitle = ""
-    var value = 0
+    //var value = 0
     var mainArrayOfSymbol: [String] = []
     var mainArrayOfSound: [String] = []
     
@@ -105,22 +104,6 @@ class PageViewController: UIPageViewController {
         contentVC.cssBukvVCS = arrayOfCSSS[index]
         return contentVC
     }
-
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//         if segue.identifier == "Detail" {
-//            if var indexPath = bukvTitle {
-//                let detailVC = segue.destination as! DetailVC
-//                detailVC.bukvTitleVC = bukvTitle
-//            }
-//        }
-//    }
-    
-
 }
 
 extension PageViewController: UIPageViewControllerDataSource {

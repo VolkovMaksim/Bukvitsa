@@ -98,7 +98,7 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
-                                    <outlet property="lineImage" destination="Ksb-vP-w9y" id="qw3-C6-bd7"/>
+                                    <outlet property="lineImageCell" destination="Ksb-vP-w9y" id="AW6-mg-r4W"/>
                                     <segue destination="86i-Jx-NBr" kind="show" identifier="TolkPage" id="Oji-hV-uyt"/>
                                 </connections>
                             </collectionViewCell>

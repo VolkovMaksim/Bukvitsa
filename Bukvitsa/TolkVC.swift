@@ -14,12 +14,16 @@ class TolkVC: UIViewController {
     @IBOutlet weak var tolkLabel: UILabel!
     
     var tolkImageVC: UIImage?
-    var currentLine = 0
+    var currentLineVC = 0
+    var numberOfLineVC = 0
+    var tolkLabelVC = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tolkImage.image = tolkImageVC
+        tolkImage.image = UIImage(named: tolkLabelVC)
+        tolkLabel.text = tolkLabelVC
+        tolkLabel.font = UIFont(name: "-Normal", size: 20)
     }
     
 
