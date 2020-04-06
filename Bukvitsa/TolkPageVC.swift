@@ -12,7 +12,6 @@ class TolkPageVC: UIPageViewController {
     
     var arrayOfLinesPage: [String] = []
     var tolkLinePage = ""
-    //var imageLinePage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +28,7 @@ class TolkPageVC: UIPageViewController {
         guard index < arrayOfLinesPage.count else { return nil }
         guard let contentVC = storyboard?.instantiateViewController(withIdentifier: "TolkVCID") as? TolkVC else { return nil }
         // передаем в переменную элемент массива по выбранному номеру
-        contentVC.tolkLabelVC = arrayOfLinesPage[index]
+        contentVC.tolkLabelVC = arrayOfLinesPage[index] + "-500"
         contentVC.currentLineVC = index
         contentVC.numberOfLineVC = arrayOfLinesPage.count
         return contentVC
