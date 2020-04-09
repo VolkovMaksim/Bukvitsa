@@ -36,7 +36,7 @@ class MainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.showsVerticalScrollIndicator = false
     }
 
     // MARK: - Table view data source

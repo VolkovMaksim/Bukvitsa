@@ -20,6 +20,7 @@ class TolkCollectionVC: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.showsVerticalScrollIndicator = false
     }
 
     // MARK: UICollectionViewDataSource
@@ -61,5 +62,24 @@ class TolkCollectionVC: UICollectionViewController {
 }
 
 extension TolkCollectionVC: UICollectionViewDelegateFlowLayout {
-    
+    // устанавливаем размеры ячейки
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemPerRow: CGFloat = 2
+        let paddingWidth = 20 * (itemPerRow + 1)
+        let availableWidth = collectionView.frame.width - paddingWidth
+        let widthPerItem = availableWidth / itemPerRow
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    }
+    // редактируем отступы СЕКЦИЙ!!! не всей коллекции (также можно сделать в интерфейс билдере)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    }
+    // настроиваем расстояние между горизонтальными линиями
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+    // расстояние между самими объектами
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }
