@@ -66,7 +66,7 @@ extension TolkCollectionVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemPerRow: CGFloat = 2
         let paddingWidth = 20 * (itemPerRow + 1)
-        let availableWidth = collectionView.frame.width - paddingWidth
+        let availableWidth = collectionView.frame.width - paddingWidth - 1
         let widthPerItem = availableWidth / itemPerRow
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
