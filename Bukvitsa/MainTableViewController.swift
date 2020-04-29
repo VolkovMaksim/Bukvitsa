@@ -59,12 +59,12 @@ class MainTableViewController: UITableViewController {
         return cell
     }
     
-    /*
+
     // этот метод позволяет изменить размер ячейки
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 64
     }
-     */
+
 
     // MARK: - Navigation
 
