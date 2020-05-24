@@ -15,8 +15,6 @@
 		3713EB6B24181CC300348CC9 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6A24181CC300348CC9 /* MainTableViewController.swift */; };
 		3713EB6D24191B2C00348CC9 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6C24191B2C00348CC9 /* DetailVC.swift */; };
 		3713EB6F24191D9400348CC9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3713EB6E24191D9400348CC9 /* PageViewController.swift */; };
-		37459B4A2435ACC600FCB3EA /* TolkCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */; };
-		37459B4C2435ACE600FCB3EA /* TolkCollectionVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37459B4B2435ACE600FCB3EA /* TolkCollectionVCell.swift */; };
 		37459B4E2435AD0A00FCB3EA /* TolkPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37459B4D2435AD0A00FCB3EA /* TolkPageVC.swift */; };
 		37459B502435AD3300FCB3EA /* TolkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37459B4F2435AD3300FCB3EA /* TolkVC.swift */; };
 		3754A1832420EEBF00888A20 /* rodnik.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3754A1822420EEBE00888A20 /* rodnik.otf */; };
@@ -35,8 +33,6 @@
 		3713EB6A24181CC300348CC9 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		3713EB6C24191B2C00348CC9 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		3713EB6E24191D9400348CC9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolkCollectionVC.swift; sourceTree = "<group>"; };
-		37459B4B2435ACE600FCB3EA /* TolkCollectionVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolkCollectionVCell.swift; sourceTree = "<group>"; };
 		37459B4D2435AD0A00FCB3EA /* TolkPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolkPageVC.swift; sourceTree = "<group>"; };
 		37459B4F2435AD3300FCB3EA /* TolkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolkVC.swift; sourceTree = "<group>"; };
 		3754A1822420EEBE00888A20 /* rodnik.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = rodnik.otf; path = "../../../../Шрифты/rodnik.otf"; sourceTree = "<group>"; };
@@ -81,8 +77,6 @@
 				3713EB6E24191D9400348CC9 /* PageViewController.swift */,
 				3713EB6C24191B2C00348CC9 /* DetailVC.swift */,
 				37CE20572424EAC00018E84A /* MoreViewController.swift */,
-				37459B492435ACC600FCB3EA /* TolkCollectionVC.swift */,
-				37459B4B2435ACE600FCB3EA /* TolkCollectionVCell.swift */,
 				37459B4D2435AD0A00FCB3EA /* TolkPageVC.swift */,
 				37459B4F2435AD3300FCB3EA /* TolkVC.swift */,
 				3713EB5C241816EA00348CC9 /* Main.storyboard */,
@@ -166,12 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37459B4A2435ACC600FCB3EA /* TolkCollectionVC.swift in Sources */,
 				37459B4E2435AD0A00FCB3EA /* TolkPageVC.swift in Sources */,
 				3713EB6B24181CC300348CC9 /* MainTableViewController.swift in Sources */,
 				3713EB6F24191D9400348CC9 /* PageViewController.swift in Sources */,
 				3713EB6D24191B2C00348CC9 /* DetailVC.swift in Sources */,
-				37459B4C2435ACE600FCB3EA /* TolkCollectionVCell.swift in Sources */,
 				37459B502435AD3300FCB3EA /* TolkVC.swift in Sources */,
 				37BE5464242E2B25009DA6FC /* CustomTableViewCell.swift in Sources */,
 				37CE20582424EAC00018E84A /* MoreViewController.swift in Sources */,
