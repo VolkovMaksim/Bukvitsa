@@ -2,8 +2,8 @@
 //  CustomTableViewCell.swift
 //  Bukvitsa
 //
-//  Created by Maksim Pavlov on 27.03.2020.
-//  Copyright © 2020 Maksim Pavlov. All rights reserved.
+//  Created by Maksim Volkov on 27.03.2020.
+//  Copyright © 2020 Maksim Volkov. All rights reserved.
 //
 
 import UIKit
