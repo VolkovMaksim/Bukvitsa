@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3724C4A12A4E871600738595 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4A02A4E871600738595 /* AppDelegate.swift */; };
 		3724C4A32A4E871600738595 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4A22A4E871600738595 /* SceneDelegate.swift */; };
-		3724C4A52A4E871600738595 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3724C4A42A4E871600738595 /* ViewController.swift */; };
 		3724C4A82A4E871600738595 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3724C4A62A4E871600738595 /* Main.storyboard */; };
 		3724C4AA2A4E871900738595 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3724C4A92A4E871900738595 /* Assets.xcassets */; };
 		3724C4AD2A4E871900738595 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3724C4AB2A4E871900738595 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		3724C49D2A4E871600738595 /* Bukvitsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bukvitsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3724C4A02A4E871600738595 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3724C4A22A4E871600738595 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3724C4A42A4E871600738595 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3724C4A72A4E871600738595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3724C4A92A4E871900738595 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3724C4AC2A4E871900738595 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,86 @@
 		3724C49F2A4E871600738595 /* Bukvitsa */ = {
 			isa = PBXGroup;
 			children = (
-				3724C4A02A4E871600738595 /* AppDelegate.swift */,
-				3724C4A22A4E871600738595 /* SceneDelegate.swift */,
-				3724C4A42A4E871600738595 /* ViewController.swift */,
-				3724C4A62A4E871600738595 /* Main.storyboard */,
-				3724C4A92A4E871900738595 /* Assets.xcassets */,
-				3724C4AB2A4E871900738595 /* LaunchScreen.storyboard */,
-				3724C4AE2A4E871900738595 /* Info.plist */,
+				3724C4B82A4E8A5B00738595 /* App */,
+				3724C4B42A4E8A3000738595 /* Bukvitsa */,
+				3724C4BC2A4E8A9100738595 /* SupportingFiles */,
 			);
 			path = Bukvitsa;
+			sourceTree = "<group>";
+		};
+		3724C4B42A4E8A3000738595 /* Bukvitsa */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4B72A4E8A5300738595 /* Model */,
+				3724C4B62A4E8A4A00738595 /* View */,
+				3724C4B52A4E8A4200738595 /* Controller */,
+			);
+			path = Bukvitsa;
+			sourceTree = "<group>";
+		};
+		3724C4B52A4E8A4200738595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3724C4B62A4E8A4A00738595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4A62A4E871600738595 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3724C4B72A4E8A5300738595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3724C4B82A4E8A5B00738595 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4BB2A4E8A7000738595 /* Model */,
+				3724C4BA2A4E8A6A00738595 /* View */,
+				3724C4B92A4E8A6100738595 /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3724C4B92A4E8A6100738595 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4A02A4E871600738595 /* AppDelegate.swift */,
+				3724C4A22A4E871600738595 /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3724C4BA2A4E8A6A00738595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4AB2A4E871900738595 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3724C4BB2A4E8A7000738595 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3724C4BC2A4E8A9100738595 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3724C4A92A4E871900738595 /* Assets.xcassets */,
+				3724C4AE2A4E871900738595 /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +207,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3724C4A52A4E871600738595 /* ViewController.swift in Sources */,
 				3724C4A12A4E871600738595 /* AppDelegate.swift in Sources */,
 				3724C4A32A4E871600738595 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35F72NUF9N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bukvitsa/Info.plist;
+				INFOPLIST_FILE = Bukvitsa/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Буквица";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -323,7 +391,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 35F72NUF9N;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bukvitsa/Info.plist;
+				INFOPLIST_FILE = Bukvitsa/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Буквица";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
