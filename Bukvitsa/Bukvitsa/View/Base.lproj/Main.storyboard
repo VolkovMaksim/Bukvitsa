@@ -415,7 +415,7 @@
         <!--Сюда-->
         <scene sceneID="y1L-Pt-3qQ">
             <objects>
-                <viewController id="1N6-rS-doR" sceneMemberID="viewController">
+                <viewController id="1N6-rS-doR" customClass="InfoViewController" customModule="Bukvitsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="quJ-fr-dcA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -469,6 +469,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Сюда" image="arrow.turn.up.right" catalog="system" id="wbC-rd-eqM"/>
+                    <connections>
+                        <outlet property="aboutLabel" destination="4d6-SW-KbW" id="POY-Lz-V83"/>
+                        <outlet property="byeLabel" destination="v2u-PA-sAM" id="cFb-06-aeE"/>
+                        <outlet property="moreLabel" destination="AiU-8k-gIh" id="Jqs-aD-HIf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Loi-Cw-sS8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

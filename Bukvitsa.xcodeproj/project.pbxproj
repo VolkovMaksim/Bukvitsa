@@ -21,6 +21,7 @@
 		374711DD2A5189340087C466 /* TolkPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711DC2A5189340087C466 /* TolkPageViewController.swift */; };
 		374711DF2A5189730087C466 /* TolkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711DE2A5189730087C466 /* TolkViewController.swift */; };
 		374711E12A5189970087C466 /* Matritsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711E02A5189970087C466 /* Matritsa.swift */; };
+		374711E32A518C4B0087C466 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711E22A518C4B0087C466 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		374711DC2A5189340087C466 /* TolkPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolkPageViewController.swift; sourceTree = "<group>"; };
 		374711DE2A5189730087C466 /* TolkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TolkViewController.swift; sourceTree = "<group>"; };
 		374711E02A5189970087C466 /* Matritsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matritsa.swift; sourceTree = "<group>"; };
+		374711E22A518C4B0087C466 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				374711DA2A517C040087C466 /* DetailViewController.swift */,
 				374711DC2A5189340087C466 /* TolkPageViewController.swift */,
 				374711DE2A5189730087C466 /* TolkViewController.swift */,
+				374711E22A518C4B0087C466 /* InfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				374711D32A5165460087C466 /* MainTableViewController.swift in Sources */,
 				374711E12A5189970087C466 /* Matritsa.swift in Sources */,
 				374711D52A5165C90087C466 /* Bukvitsa.swift in Sources */,
+				374711E32A518C4B0087C466 /* InfoViewController.swift in Sources */,
 				374711DF2A5189730087C466 /* TolkViewController.swift in Sources */,
 				374711D92A517B5C0087C466 /* PageViewController.swift in Sources */,
 				374711D72A5166160087C466 /* DetailTableViewCell.swift in Sources */,
