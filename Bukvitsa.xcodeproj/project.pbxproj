@@ -16,6 +16,8 @@
 		374711D32A5165460087C466 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711D22A5165460087C466 /* MainTableViewController.swift */; };
 		374711D52A5165C90087C466 /* Bukvitsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711D42A5165C90087C466 /* Bukvitsa.swift */; };
 		374711D72A5166160087C466 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711D62A5166160087C466 /* DetailTableViewCell.swift */; };
+		374711D92A517B5C0087C466 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711D82A517B5C0087C466 /* PageViewController.swift */; };
+		374711DB2A517C040087C466 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374711DA2A517C040087C466 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		374711D22A5165460087C466 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		374711D42A5165C90087C466 /* Bukvitsa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bukvitsa.swift; sourceTree = "<group>"; };
 		374711D62A5166160087C466 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		374711D82A517B5C0087C466 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		374711DA2A517C040087C466 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				374711D22A5165460087C466 /* MainTableViewController.swift */,
+				374711D82A517B5C0087C466 /* PageViewController.swift */,
+				374711DA2A517C040087C466 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 				3724C4A12A4E871600738595 /* AppDelegate.swift in Sources */,
 				374711D32A5165460087C466 /* MainTableViewController.swift in Sources */,
 				374711D52A5165C90087C466 /* Bukvitsa.swift in Sources */,
+				374711D92A517B5C0087C466 /* PageViewController.swift in Sources */,
 				374711D72A5166160087C466 /* DetailTableViewCell.swift in Sources */,
 				3724C4A32A4E871600738595 /* SceneDelegate.swift in Sources */,
+				374711DB2A517C040087C466 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

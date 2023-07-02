@@ -49,7 +49,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="soundLabel" destination="hOT-Bg-GC9" id="Spk-qo-g39"/>
-                                    <segue destination="IhD-OL-MxY" kind="show" identifier="DetailPage" trigger="accessoryAction" id="lHY-Db-2eh"/>
+                                    <segue destination="IhD-OL-MxY" kind="show" identifier="DetailPage" id="iUl-Lt-beX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -135,17 +135,17 @@
         <!--Образ буквицы-->
         <scene sceneID="Hab-9C-Mew">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IhD-OL-MxY" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IhD-OL-MxY" customClass="PageViewController" customModule="Bukvitsa" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Образ буквицы" id="lb1-RD-vJa"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4EX-s7-gK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3833" y="-266"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="udM-x0-IsI">
             <objects>
-                <viewController storyboardIdentifier="DetailVCID" id="cVk-Ld-0uo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailVCID" id="cVk-Ld-0uo" customClass="DetailViewController" customModule="Bukvitsa" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RQo-VZ-uVx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,10 +221,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v2C-oU-pWS">
-                                        <rect key="frame" x="145" y="58.5" width="85" height="116"/>
+                                        <rect key="frame" x="142" y="58.5" width="91" height="116"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Прописные" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byS-fW-8ex">
-                                                <rect key="frame" x="0.0" y="0.0" width="85" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="XOr-Hk-UlH"/>
                                                 </constraints>
@@ -233,7 +233,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcf-16-QKu">
-                                                <rect key="frame" x="43" y="35" width="42" height="20.5"/>
+                                                <rect key="frame" x="49" y="35" width="42" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.333333333333329" id="elZ-pJ-eBF"/>
                                                 </constraints>
@@ -242,7 +242,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tb-9h-th7">
-                                                <rect key="frame" x="43" y="65.5" width="42" height="20"/>
+                                                <rect key="frame" x="49" y="65.5" width="42" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.333333333333329" id="IIA-Ws-d0a"/>
                                                 </constraints>
@@ -251,7 +251,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEv-Pp-EIQ">
-                                                <rect key="frame" x="43" y="95.5" width="42" height="20.5"/>
+                                                <rect key="frame" x="49" y="95.5" width="42" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.333333333333329" id="T3O-Ek-8bU"/>
                                                 </constraints>
@@ -265,10 +265,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Vl-MY-Mpa">
-                                        <rect key="frame" x="263.5" y="58.5" width="76" height="116"/>
+                                        <rect key="frame" x="259.5" y="58.5" width="80" height="116"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Строчные" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT1-Hg-FsZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="4OG-es-ebp"/>
                                                 </constraints>
@@ -277,7 +277,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIw-OF-d5F">
-                                                <rect key="frame" x="0.0" y="35" width="76" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="35" width="80" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.333333333333329" id="su1-aX-Wdt"/>
                                                 </constraints>
@@ -286,7 +286,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3N-g5-RRO">
-                                                <rect key="frame" x="0.0" y="65.5" width="76" height="20"/>
+                                                <rect key="frame" x="0.0" y="65.5" width="80" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.333333333333329" id="gS4-pT-fUm"/>
                                                 </constraints>
@@ -295,7 +295,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFI-v8-aLt">
-                                                <rect key="frame" x="0.0" y="95.5" width="76" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="95.5" width="80" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.333333333333329" id="7OX-Dg-Ifs"/>
                                                 </constraints>
@@ -349,6 +349,18 @@
                             <constraint firstItem="Hc8-6K-U2d" firstAttribute="trailing" secondItem="Nq3-97-7vx" secondAttribute="trailing" id="ulc-l0-m5I"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cssBukvP" destination="mEv-Pp-EIQ" id="r40-XY-Yzw"/>
+                        <outlet property="cssBukvS" destination="yFI-v8-aLt" id="mUO-Mp-YBf"/>
+                        <outlet property="definitionBukv" destination="nVX-Wf-kpQ" id="yjp-dj-bNB"/>
+                        <outlet property="htmlBukvP" destination="1tb-9h-th7" id="S8y-al-a7Q"/>
+                        <outlet property="htmlBukvS" destination="H3N-g5-RRO" id="ZH3-2O-3bl"/>
+                        <outlet property="imageBukv" destination="a6X-Hq-3cE" id="ZTL-9b-n98"/>
+                        <outlet property="soundBukv" destination="5gA-L5-XFH" id="IPt-US-pTb"/>
+                        <outlet property="titleBukv" destination="ub6-0C-gef" id="a3N-hP-10Q"/>
+                        <outlet property="unicodeBukvP" destination="Xcf-16-QKu" id="NsK-mj-EVl"/>
+                        <outlet property="unicodeBukvS" destination="TIw-OF-d5F" id="Qvm-qs-oHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ghr-Ew-L90" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

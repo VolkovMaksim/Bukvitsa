@@ -8,7 +8,7 @@
 import UIKit
 
 class MainTableViewController: UITableViewController {
-
+    
     let bukvitsa = Bukvitsa()
 
     override func viewDidLoad() {
@@ -41,5 +41,19 @@ class MainTableViewController: UITableViewController {
         return 64
     }
 
+    // MARK: - Navigation
 
+    // функция для передачи данных по сегвею "DetailPage"
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // если идентификатор сигвея соответствует "DetailPage"
+        if segue.identifier == "DetailPage" {
+            // если новая константа принимает значение выбранной ячейки
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                // новая константа VC, класса PageViewController, которая будет в конце перехода по сегвею
+                let pageVC = segue.destination as! PageViewController
+                // установка значения выбранной ячейки для свойства bukvTitle
+                pageVC.bukvTitle = bukvitsa.arrayOfSymbols[indexPath.row]
+            }
+        }
+    }
 }
